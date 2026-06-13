@@ -16,13 +16,6 @@
 Every LLM provider exposes dozens of model identifiers, aliases, previews, legacy versions, and organization-specific deployments.
 
 When building applications, you must know the **exact model string** accepted by the API:
-
-```python
-model="gpt-4o"
-model="gemini-2.5-flash"
-model="claude-sonnet-4"
-```
-
 Unfortunately, documentation can lag behind production deployments.
 
 This toolkit directly queries provider infrastructure to discover:
