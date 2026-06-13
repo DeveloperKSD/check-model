@@ -1,4 +1,4 @@
-# Multi-LLM API Model Discovery Scripts
+#Multi-LLM API Model Discovery Scripts
 
 A collection of lightweight Python utility scripts designed to programmatically inspect, query, and discover active models across major LLM provider platforms.
 
@@ -14,7 +14,7 @@ Because LLM APIs are stateless, developers must explicitly pass target strings (
 ├── groq_models.py        # Lists ultra-fast open-weights instances hosted on Groq hardware
 ├── anthropic_models.py   # Uses Anthropic's endpoints to scan available Claude profiles
 └── README.md             # Repository documentation and startup guide
-` ` `
+```
 
 ---
 
@@ -27,7 +27,7 @@ Ensure you have **Python 3.10+** installed. Follow the steps below to initialize
 ``````````bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
-` ` `
+```
 
 ### 2. Install Official SDK Dependencies
 
@@ -35,7 +35,7 @@ Install the required platform libraries using pip:
 
 `````````bash
 pip install google-genai openai groq anthropic
-` ` `
+```
 
 ### 3. Configure API Environment Credentials
 
@@ -48,7 +48,7 @@ export GEMINI_API_KEY="your_gemini_api_key_here"
 export OPENAI_API_KEY="your_openai_api_key_here"
 export GROQ_API_KEY="your_groq_api_key_here"
 export ANTHROPIC_API_KEY="your_anthropic_api_key_here"
-` ` `
+```
 
 **Windows PowerShell:**
 
@@ -57,7 +57,7 @@ $env:GEMINI_API_KEY="your_gemini_api_key_here"
 $env:OPENAI_API_KEY="your_openai_api_key_here"
 $env:GROQ_API_KEY="your_groq_api_key_here"
 $env:ANTHROPIC_API_KEY="your_anthropic_api_key_here"
-` ` `
+```
 
 ---
 
@@ -67,9 +67,9 @@ $env:ANTHROPIC_API_KEY="your_anthropic_api_key_here"
 
 Utilizes the updated standard `google-genai` SDK to run an explicit configuration check against a specific target baseline (`gemini-2.5-flash`) to parse structural limits before printing the full valid key roster.
 
-``````bash
+```bash
 python gemini_models.py
-` ` `
+```
 
 ### 🧠 OpenAI Discovery (`openai_models.py`)
 
